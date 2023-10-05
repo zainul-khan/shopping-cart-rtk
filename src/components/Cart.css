@@ -1,0 +1,79 @@
+/* Cart.css */
+
+/* Cart container */
+.cart {
+    position: fixed;
+    top: 0;
+    right: -400px; /* Start with the cart hidden */
+    width: 400px;
+    height: 100%;
+    background-color: rgb(239, 233, 233);
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+  }
+  
+  /* Open the cart */
+  .cart.open {
+    right: 0;
+  }
+  
+  /* Cart header */
+  .cart-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .cart-header h2 {
+    margin: 0;
+  }
+  
+  /* Cart close button */
+  .btn-close {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Cart items */
+  .cart-items {
+    padding: 10px;
+  }
+  
+  .cart-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+  
+  .cart-item p {
+    margin: 5px 0;
+  }
+  
+  /* Cart total */
+  .cart-total {
+    padding: 10px;
+    text-align: right;
+  }
+  
+  /* Cart buttons */
+  .cart-item button,
+  .cart-header button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .cart-item button:hover,
+  .cart-header button:hover {
+    background-color: #555;
+  }
+  
